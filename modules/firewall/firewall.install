@@ -1,0 +1,20 @@
+
+
+<?php
+function firewall_schema()
+{
+    $schema['firewall'] = array(
+        'fields' => array(
+            'ip' => array(
+                'type' => 'varchar',
+                'length' => 40,
+                'not null' => true,
+          ),
+        ),
+        'primary key' => array(
+            'ip',
+        ),
+    );
+
+    return $schema;
+}

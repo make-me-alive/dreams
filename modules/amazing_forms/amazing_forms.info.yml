@@ -1,0 +1,13 @@
+
+
+# here we define the basic characteristics and dependencies of our custom made module :)
+
+
+name: Amazing forms
+type: module
+description: 'Demo for creating Drupal 8 forms.'
+package: Custom
+core: 8.x
+dependencies:
+- node
+- block

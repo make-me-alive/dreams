@@ -1,0 +1,27 @@
+
+
+global-styling:
+ css:
+   theme:
+     css/style.css: {}
+     css/slick.css: {}
+     css/slideshow.css: {}
+     css/slick-theme.css: {}
+     css/block2.css: {}
+     css/footer.css: {}
+     css/grid-work.css: {}
+     css/services.css: {}
+
+ js:
+   js/slideshow.js: {}
+   js/slick.min.js: {}
+  #  js/socialbuttons.js: {}
+   # js/slick_script.js: {}
+ dependencies:
+   # - js/jquery-migrate-1.2.1.min.js
+   # - js/jquery-2.2.1.min.js
+   - core/jquery
+   # - core/drupal.ajax
+   # - core/drupal
+   # - core/drupalSettings
+   # - core/jquery.once

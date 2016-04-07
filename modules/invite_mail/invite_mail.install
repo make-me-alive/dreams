@@ -1,0 +1,22 @@
+
+<?php
+
+function invite_mail_schema()
+{
+    $schema['invited_users'] = array(
+      'fields' => array(
+                'id' => array(
+                'type' => 'serial',
+                'not null' => true,
+              ),
+                'user_email' => array(
+                'type' => 'varchar',
+                'length' => 40,
+                'not null' => true,
+              ),
+    ),
+        'primary key' => array('id'),
+  );
+
+    return $schema;
+}

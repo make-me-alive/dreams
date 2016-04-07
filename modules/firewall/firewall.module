@@ -1,0 +1,12 @@
+
+<?php
+function firewall_menu_link_defaults()
+{
+    return array(
+        'firewall.list' => array(
+            'link_title' => 'Allowed IP addresses',
+            'route_name' => 'firewall.list',
+            'parent' => 'user.admin_index',
+        ),
+    );
+}

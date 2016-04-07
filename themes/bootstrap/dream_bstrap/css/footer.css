@@ -1,0 +1,8 @@
+.a2a_kit.a2a_kit_size_32.addtoany_list { right: 5%; position: absolute; }
+
+footer.footer.container { background-image: url("../css_images/footer.jpg"); background-size: cover; background-repeat: no-repeat; }
+
+@media (min-width: 1200px) { .container { width: 100%; } }
+.footer { margin-top: 0; width: 100% !important; }
+
+/*# sourceMappingURL=footer.css.map */

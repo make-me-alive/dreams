@@ -1,0 +1,7 @@
+
+
+name: Hello World
+type: module
+description: oye Hello World
+package: Custom
+core: 8.x

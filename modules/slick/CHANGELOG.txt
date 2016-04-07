@@ -1,0 +1,63 @@
+
+Slick 8.x-2.0-dev, 2016-02-11
+-----------------------------
+- Updated useTransform to TRUE to reflect post v1.5.9.
+- Fixed for non-editable ID during Duplicate operation.
+- Removed focusOnSelect asnavfor failsafe.
+- Merged methods getArrows(), getDots(), getDefinedSkins() into getSkins().
+
+Slick 8.x-2.0-dev, 2016-01-20
+-----------------------------
+- Fixed for Route "entity.responsive_image_style.collection" does not exist
+  error when responsive_image is not installed.
+- Updated deprecated \Drupal::url as per [#2605546]
+- Fixed for undefined index notice: current_view_mode.
+- Moved common functions to SlickFormatterTrait for slick formatters.
+- Removed trivial settings: pattern, wrapper class.
+- Removed unused services.
+
+Slick 8.x-2.0-dev, 2016-01-19
+-----------------------------
+- A few cleanup here and there.
+- Fixed for Slick media 'overlay' option.
+
+Slick 8.x-2.0-dev, 2016-01-18
+-----------------------------
+- Updated descriptions here and there.
+- Removed skin Test from SlickSkin.php.
+- Fixed skin JS library.
+
+Slick 8.x-2.0-dev, 2016-01-17
+-----------------------------
+- Added the CHANGELOG.txt
+- Issue #2651690: Add slick.api.php
+- Issue #2651686: Add composer.json
+- Issue #2651656: Create a slick text formatter
+- Issue #2651652: Create a slick image formatter
+- Issue #2651650: Provide Configuration UI (slick UI port)
+- Issue #2651648: Implement CMI
+- Issue #2432711 by valkum: 8.x-1.x Port
+- Initial commit.
+
+Slick 8.x-2.0-dev, 2015-12-12
+-----------------------------
+- Removed "slide_" prefixed options, e.g.: slide_layout becomes layout.
+- Changed colorbox_style to box_style to be generic enough for other lightboxes.
+- Renamed theme_slick_item() to theme_slick_slide() to match the library
+  slick-slide.
+
+Slick 8.x-2.0-dev, 2015-01-15
+-----------------------------
+- Converted all skins into library assets via hook_library_info_build().
+
+Slick 8.x-2.0-dev, 2014-09-26
+-----------------------------
+- Converted most of the preprocessed classes and attributes into twig templates.
+- Added config/schema and config/install files.
+- Added slick.links.action.yml
+- Converted CTools menu into slick.links.menu.yml
+- Converted hook_library_info() into slick.libraries.yml
+- Converted slick_fields into an image formatter plugin.
+- Converted CTools plugin into CMI.
+- Removed dependencies on CTools, libraries and jquery_update modules.
+- Initial D8 WIP locally.

@@ -1,0 +1,9 @@
+
+ # here we declare the path of our custom module where it should get displayed its permission etc....
+# amazing_forms_contribute:
+#   path: 'amazing-forms/contribute'
+#   defaults:
+#     _form: '\Drupal\amazing_forms\Controller\ContributeForm'
+#     _title: 'Conribute page'
+#   requirements:
+#     _permission: 'access content'

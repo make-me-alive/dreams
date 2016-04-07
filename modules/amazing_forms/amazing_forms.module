@@ -1,0 +1,18 @@
+ <?php
+//
+// use Drupal\Plugin\Block;
+//
+// function amazing_forms_view() {
+//
+//   $block = array();
+//   $block['content'] = 'add_form';
+//
+//   return $block;
+//
+// }
+//
+// function add_form() {
+//   $form = \Drupal::formBuilder()->getForm('Drupal\amazing_forms\Controller\ContributeForm');
+//   $myForm=render($form);
+//   return $myForm;
+// }

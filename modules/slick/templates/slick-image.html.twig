@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a lazyloaded image field.
+ *
+ * Available variables:
+ * - image: A collection of image data.
+ * - url: An optional URL the image can be linked to.
+ * - settings: An array containing the given settings.
+ *
+ * @see template_preprocess_slick_image()
+ *
+ * @ingroup themeable
+ */
+#}
+{% spaceless %}
+{% if url %}
+  <a href="{{ url }}"{{ settings.url.attributes }}>
+    {{ image }}
+
+    {% if settings.lightbox is defined %}
+      {% if settings.icon is defined %}
+        {{ settings.icon }}
+      {% else %}
+        <span class="media-icon media-icon--lightbox"></span>
+      {% endif %}
+    {% endif %}
+
+    {% if noscript %}<noscript>{{ noscript }}</noscript>{% endif %}
+  </a>
+{% else %}
+  {{ image }}
+  {% if settings.icon is defined %} {{ settings.icon }} {% endif %}
+  {% if noscript %}<noscript>{{ noscript }}</noscript>{% endif %}
+{% endif %}
+{% endspaceless %}

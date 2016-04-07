@@ -1,0 +1,22 @@
+firewall.list:
+  path: 'admin/config/people/firewall'
+  defaults:
+    _content: '\Drupal\firewall\ListController::content'
+    _title: 'Allowed IP addresses'
+  requirements:
+    _permission: 'administer site configuration'
+
+firewall.add:
+  path: 'admin/config/people/firewall/add'
+  defaults:
+    _form: '\Drupal\firewall\AddForm'
+    _title: 'Add allowed IP address'
+  requirements:
+    _permission: 'administer site configuration'
+
+firewall.delete:
+  path: 'admin/config/people/firewall/delete/{ip}'
+  defaults:
+    _form: '\Drupal\firewall\DeleteForm'
+  requirements:
+    _permission: 'administer site configuration'

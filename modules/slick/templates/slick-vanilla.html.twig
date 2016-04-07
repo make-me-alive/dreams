@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the slick vanilla item template.
+ *
+ * Available variables:
+ * - attributes: An array of attributes to apply to the element.
+ * - item: A renderable array of the slide content.
+ * - settings: An array containing the given settings.
+ *
+ * @see template_preprocess_slick_vanilla()
+ */
+#}
+{%
+  set classes = [
+    'slick__slide',
+    'slide',
+    'slide--' ~ delta
+  ]
+%}
+
+{% spaceless %}
+<div{{ attributes.addClass(classes) }}>
+  {{ item }}
+</div>
+{% endspaceless %}

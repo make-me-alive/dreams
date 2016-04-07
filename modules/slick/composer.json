@@ -1,0 +1,17 @@
+{
+  "name": "drupal/slick",
+  "description": "Slick carousel, the last carousel you'll ever need.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "support": {
+    "issues": "https://drupal.org/project/issues/slick",
+    "source": "https://drupal.org/project/slick"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "http://git.drupal.org/project/slick.git"
+    }
+  ],
+  "require": { }
+}

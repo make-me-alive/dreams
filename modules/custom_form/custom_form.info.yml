@@ -1,0 +1,14 @@
+
+name: Custom form
+type: module
+description: 'Demo for creating Drupal 8 forms.'
+package: Custom
+core: 8.x
+# hidden: false
+
+
+# name: Hello World
+# type: module
+# description: oye Hello World
+# package: Custom
+# core: 8.x

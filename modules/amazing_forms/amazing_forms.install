@@ -1,0 +1,37 @@
+/**
+ * this is the way to create a table in drupal
+ */
+
+<?php
+
+function amazing_forms_schema()
+{
+    $schema['amazing_forms_table'] = array(
+    'fields' => array(
+            'id' => array(
+            'type' => 'serial',
+            'not null' => true,
+          ),
+
+          'username' => array(
+            'type' => 'varchar',
+            'length' => 64,
+            'not null' => true,
+            'default' => '',
+            'description' => "User's username.",
+
+          ),
+
+          'email' => array(
+            'type' => 'varchar',
+            'length' => 254,
+            'not null' => true,
+            'default' => '',
+            'description' => "User's e-mail address.",
+          ),
+    ),
+    'primary key' => array('id'),
+  );
+
+    return $schema;
+}

@@ -1,0 +1,126 @@
+.form-group {
+  .view-header {
+    p {
+      position: relative;
+      margin-bottom: 3%;
+      text-align: center;
+    }
+  }
+}
+.ser-bod-row-class {
+  left: 10%;
+  position: relative;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+#block-views-block-what-we-do-block-1 {
+  background-image: url("../css_images/service-bg.jpg");
+  background-size: cover;
+}
+.ser-tit-class {
+  background-color: #ffc200;
+  padding: 5% 5% 15%;
+  margin: 0;
+  font-size: 28px;
+}
+.ser-bod-class {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.ser-bod-class:hover {
+  background-color: #ffc200;
+  position: relative;
+}
+.ser-bod-col-class {
+  margin: 1%;
+  padding: 2%;
+  text-align: center;
+}
+.ser-bod-col-class.views-col {
+  width: 25% !important;
+}
+@media screen and (max-width:449px) {
+  .ser-bod-col-class.views-col {
+    width: 80% !important;
+  }
+  .ser-img-class {
+    display: none;
+  }
+}
+.ser-img-class {
+  background-image: url("../css_images/what-we-do.png");
+  width: 21%;
+  background-repeat: no-repeat;
+  top: 18%;
+  height: 19%;
+  position: absolute;
+  z-index: 1;
+  background-size: 27%;
+}
+@media screen and (min-width:650px) and (max-width:950px) {
+  .ser-tit-class {
+    padding: 8% 10% 15%;
+    font-size: 20px;
+  }
+  .ser-img-class {
+    top: 13%;
+    height: 14%;
+    background-size: 35%;
+  }
+}
+@media screen and (min-width:950px) and (max-width:1140px) {
+  .ser-img-class {
+    background-size: 30%;
+  }
+}
+@media screen and (min-width:450px) and (max-width:650px) {
+  .ser-img-class {
+    top: 10%;
+    height: 12%;
+    background-size: 37%;
+  }
+  .ser-tit-class {
+    font-size: 16px;
+    padding: 5% 5% 20%;
+  }
+}
+.views-col.col-1 {
+  .ser-img-class {
+    @extend .ser-img-class;
+    background-position: 50% -1%;
+    // @media screen and (max-width:449px){
+    //   background-position: 51% 0%;
+    //   z-index: 2;
+    // }
+  }
+}
+.views-col.col-1:hover {
+  .ser-img-class {
+    @extend .ser-img-class;
+    background-position: 50% 8%; // z-index: 2;
+  }
+}
+.views-col.col-2 {
+  .ser-img-class {
+    @extend .ser-img-class;
+    background-position: 50% 18%;
+  }
+}
+.views-col.col-2:hover {
+  .ser-img-class {
+    @extend .ser-img-class;
+    background-position: 50% 27%;
+  }
+}
+.views-col.col-3 {
+  .ser-img-class {
+    @extend .ser-img-class;
+    background-position: 50% 36%;
+  }
+}
+.views-col.col-3:hover {
+  .ser-img-class {
+    @extend .ser-img-class;
+    background-position: 50% 45%;
+  }
+}

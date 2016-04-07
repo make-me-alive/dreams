@@ -1,0 +1,45 @@
+#block-2ndblock {
+  background: #444;
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  background-image: url("../css_images/bg-content.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media screen and (min-width:450px) and (max-width:850px) {
+  #block-2ndblock {
+    padding-bottom: 16%;
+  }
+}
+@media screen and (min-width:450px) and (max-width:650px) {
+  #block-2ndblock {
+    padding-bottom: 26%;
+  }
+  .text-align-center {
+    font-size: medium;
+  }
+}
+@media screen and (max-width:449px) {
+  #block-2ndblock {
+    padding-bottom: 31%;
+    padding-top: 7%;
+  }
+  .text-align-center {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+.footer {
+  margin-top: 0;
+}
+ul.menu.nav {
+  display: inline-block;
+}

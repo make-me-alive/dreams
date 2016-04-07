@@ -1,0 +1,18 @@
+ <?php
+
+use Drupal\Plugin\Block;
+
+function invite_mail_view() {
+
+  $block = array();
+  $block['content'] = 'add_form';
+
+  return $block;
+
+}
+
+function add_form() {
+  $form = \Drupal::formBuilder()->getForm('Drupal\invite_mail\Form\InviteMailForm');
+  $myForm=render($form);
+  return $myForm;
+}

@@ -1,0 +1,116 @@
+$black: black; //fonts
+$font_0: sans-serif; //urls
+$url_0: url("../css_images/tsd-logo.png");
+$url_1: url("../css_images/bg-navigation.jpg");
+body {
+  margin-top: 0;
+}
+.navbar-default {
+  background-color: $black;
+  width: 100%;
+  .navbar-nav > li > a,
+  .navbar-nav > li > a:hover {
+    color: white;
+  }
+}
+.navbar-nav {
+  float: left;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-left: 8%;
+}
+.navbar-brand {
+  display: none;
+}
+.nav > li {
+  padding-right: 3em;
+}
+.navbar-btn {
+  margin: auto;
+}
+#block-dream-bstrap-main-menu > ul > li {
+  &:nth-child(4) {
+    background-image: url("../css_images/tsd-logo.png");
+    background-repeat: no-repeat;
+    padding-right: 7em;
+    background-position: 20% 55%;
+    padding-bottom: 15px;
+    > a {
+      padding-top: 0;
+      color: black;
+    }
+  }
+}
+.navbar.container {
+  max-width: 100%;
+  border-image-source: $url_1;
+  border-image-slice: 2;
+  border-bottom-width: 0;
+  border-top-width: thick;
+  margin-bottom: 0;
+  // 	position: fixed;
+  //  z-index: 1;
+}
+.checkbox input[type="checkbox"] {
+  position: inherit;
+  margin-left: auto;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 10px 5px 5px 0;
+  line-height: inherit;
+}
+#edit-delete {
+  margin-left: 3%;
+}
+.navbar-header {
+  display: none;
+}
+.col-sm-12 {
+  padding: 0;
+}
+.form-group {
+  .view-work-showcase.view-id-work_showcase {
+    margin-bottom: 10px;
+  }
+}
+.region.region-highlighted {
+  .js-quickedit-page-title.page-header {
+    margin-top: 0;
+    padding-top: 2%;
+    font-family: 'Conv_Brandon_blk';
+    left: 40%;
+    padding-bottom: 1%;
+    border-bottom: none;
+    position: relative;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:750px) {
+  .region.region-highlighted .js-quickedit-page-title.page-header {
+    font-size: 22px;
+
+  }
+}
+
+@media screen and (max-width:500px) {
+.region.region-highlighted .js-quickedit-page-title.page-header {
+  left: 30%;
+  font-size: 21px;
+}
+}
+
+.path-services{
+.region.region-highlighted {
+  background-image: url("../css_images/service-bg.jpg");
+background-size: cover;
+}
+}
+// .path-frontpage{
+//   .region.region-highlighted{
+//     display: none;
+//   }
+// }

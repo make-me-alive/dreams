@@ -1,0 +1,18 @@
+
+Slick extras 8.x-1.0-dev, 2016-02-11
+------------------------------------
+- Removed untested 3d optionsets.
+
+Slick extras 8.x-1.0-dev, 2016-01-20
+------------------------------------
+- Removed trivial settings: pattern, wrapper class.
+
+Slick extras 8.x-1.0-dev, 2016-01-19
+------------------------------------
+- A few cleanup.
+
+Slick extras 8.x-1.0-dev, 2016-01-18
+------------------------------------
+- Updated slick_example descriptions.
+- Issue #2651740: D8 port
+- Initial D8 port.

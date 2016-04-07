@@ -1,0 +1,7 @@
+name: Invite Mail
+type: module
+description: Invite Mail.
+core: 8.x
+dependencies:
+- node
+- block

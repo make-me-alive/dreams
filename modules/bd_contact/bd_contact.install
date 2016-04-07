@@ -1,0 +1,26 @@
+<?php
+
+function bd_contact_schema()
+{
+    $schema['bd_contact'] = array(
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'not null' => true,
+      ),
+      'name' => array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => true,
+      ),
+      'message' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => true,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+
+    return $schema;
+}

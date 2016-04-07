@@ -1,0 +1,139 @@
+# All libraries supported by Slick module.
+slick.mousewheel:
+  remote: https://github.com/brandonaaron/jquery-mousewheel
+  license:
+    name: MIT
+    url: https://github.com/brandonaaron/jquery-mousewheel/blob/master/LICENSE.txt
+    gpl-compatible: true
+  version: 3.1.11
+  js:
+    /libraries/mousewheel/jquery.mousewheel.min.js: { weight: -4 }
+  dependencies:
+    - core/jquery
+
+slick.easing:
+  remote: https://github.com/gdsmith/jquery.easing
+  license:
+    name: MIT
+    url: http://www.opensource.org/licenses/mit-license.php
+    gpl-compatible: true
+  version: 1.3
+  js:
+    /libraries/easing/jquery.easing.min.js: {}
+  dependencies:
+    - core/jquery
+
+slick:
+  remote: http://kenwheeler.github.io/slick/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/slick/slick/slick.min.js: { weight: -3 }
+  css:
+    base:
+      /libraries/slick/slick/slick.css: {}
+  dependencies:
+    - core/jquery
+
+slick.load:
+  version: VERSION
+  js:
+    js/slick.load.min.js: { weight: 0 }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - slick/slick
+
+slick.theme:
+  version: VERSION
+  css:
+    layout:
+      css/layout/slick.module.css: {}
+    theme:
+      css/theme/slick.theme.css: {}
+  dependencies:
+    - slick/slick
+    - slick/slick.load
+
+slick.colorbox:
+  version: VERSION
+  js:
+    js/slick.colorbox.min.js: {}
+  css:
+    component:
+      css/components/slick.colorbox.css: {}
+      css/components/slick.lightbox.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - colorbox/colorbox
+
+slick.photobox:
+  remote: https://github.com/yairEO/photobox/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/yairEO/photobox/issues/17
+    gpl-compatible: true
+  js:
+    /libraries/photobox/photobox/jquery.photobox.js: {}
+    js/slick.photobox.min.js: {}
+  css:
+    base:
+      /libraries/photobox/photobox/photobox.css: {}
+    component:
+      css/components/slick.lightbox.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    # - photobox/photobox
+
+slick.media:
+  version: VERSION
+  js:
+    js/slick.media.min.js: {}
+  css:
+    component:
+      css/components/slick.media.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+slick.dots.thumbnail:
+  version: VERSION
+  css:
+    component:
+      css/components/slick.dots--thumbnail.css: {}
+  dependencies:
+    - slick/slick
+
+slick.arrow.down:
+  version: VERSION
+  css:
+    component:
+      css/components/slick.arrows--down.css: {}
+  dependencies:
+    - slick/slick
+
+slick.admin:
+  version: VERSION
+  js:
+    js/slick.admin.min.js: {}
+  css:
+    theme:
+      css/admin/slick.admin.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
